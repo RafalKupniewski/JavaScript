@@ -1,0 +1,7 @@
+[
+    { "model": "Iphone 7 Plus",  "procesor": "A10", "aparat": "12 MP", "pojemnosc": "256 GB" },
+    { "model": "Iphone 7",  "procesor": "A10", "aparat": "12 MP", "pojemnosc": "256 GB" },
+    { "model": "Iphone 6 S Plus ",  "procesor": "A9", "aparat": "12 MP", "pojemnosc": "128 GB" },
+    { "model": "Iphone 6 S",  "procesor": "A9", "aparat": "12 MP", "pojemnosc": "128 GB" },
+    { "model": "Iphone 6 SE ",  "procesor": "A9", "aparat": "12 MP", "pojemnosc": "64 GB" }
+]
