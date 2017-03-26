@@ -27,9 +27,8 @@ function ListaIphonow(){
 		iphony.push(new Iphon(json))
 	}
 
-    //self.dodajIphona = function(json) {
-	//	iphony.push(new Iphon(json));
-	}
+
+	
 	ListaIphonow.prototype.toTable=function(){
 		var table = '<table>';
 		table += generateTableHeader();
@@ -41,23 +40,12 @@ function ListaIphonow(){
 
 	}
 
-
-    //self.toTable = function() {
-	//	var table = '<table>';
-//		table += generateTableHeader();
-//		for(var i=0; i<iphony.length; i++) {
-	//		table += iphony[i].toTableRow();
-	//	}
-//		table += '</table>';
-//		return table;
-//	}
-
     var generateTableHeader = function() {
 		return '<tr><th>Model</th> <th>Procesor</th> <th>Aparat</th> <th>Pojemnosc</th></tr>';
 	}
-	
-
 }
+
+
 function init(){
 var oReq = new XMLHttpRequest();
 oReq.onload = reqListener;
