@@ -30,8 +30,7 @@ function ListaIphonow(){
     //self.dodajIphona = function(json) {
 	//	iphony.push(new Iphon(json));
 	}
-
-    self.toTable = function() {
+	ListaIphonow.prototype.toTable=function(){
 		var table = '<table>';
 		table += generateTableHeader();
 		for(var i=0; i<iphony.length; i++) {
@@ -39,7 +38,19 @@ function ListaIphonow(){
 		}
 		table += '</table>';
 		return table;
+
 	}
+
+
+    //self.toTable = function() {
+	//	var table = '<table>';
+//		table += generateTableHeader();
+//		for(var i=0; i<iphony.length; i++) {
+	//		table += iphony[i].toTableRow();
+	//	}
+//		table += '</table>';
+//		return table;
+//	}
 
     var generateTableHeader = function() {
 		return '<tr><th>Model</th> <th>Procesor</th> <th>Aparat</th> <th>Pojemnosc</th></tr>';
