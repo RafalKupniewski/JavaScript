@@ -23,8 +23,12 @@ function ListaIphonow(){
     var iphony = []
     var self = this;
 
-    self.dodajIphona = function(json) {
-		iphony.push(new Iphon(json));
+	ListaIphonow.prototype.dodajIphona=function(json){
+		iphony.push(new Iphon(json))
+	}
+
+    //self.dodajIphona = function(json) {
+	//	iphony.push(new Iphon(json));
 	}
 
     self.toTable = function() {
