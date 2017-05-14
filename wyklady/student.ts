@@ -10,10 +10,28 @@ class Student implements Person{
     }
 }
 
-function sayHi(person: Person) {
-console.log("I am" + person.imie);
+//let add = function(a: number, b: number):number{
+//    return a + b;
+//}
+
+let add = (first: number, last: number) => number = function(a: number, b:number):number{
+    return a + b;
 }
 
-let stud = new Student('Jan','Kowalski')
+//function sayHi(person: Person) {
+//console.log("I am" + person.imie);
+//}
 
+function sayHi(person: {imie: string, nazwisko?: string}) {
+    if (person.nazwisko) {
+        console.log(`I am' ${person.imie} ${person.nazwisko}`);
+    }
+    else {
+       console.log("I am" ${person.imie}); 
+    }
+
+}
+
+let stud: Person = new Student('Jan','Kowalski')
+stud.imie='Jadzka'
 sayHi(stud);
