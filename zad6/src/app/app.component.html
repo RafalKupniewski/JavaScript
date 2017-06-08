@@ -1,0 +1,21 @@
+<h1>
+iPhones
+</h1>
+<div class="navLinks">
+    <a [routerLink]="['/dodaj']">Dodaj</a>
+    <a [routerLink]="['/edytuj']">Edytuj</a>
+    <a [routerLink]="['/usun']">Usun</a>
+    <a [routerLink]="['/szukaj']">Szukaj</a>
+
+</div>
+<router-outlet></router-outlet>
+<br>
+<br><br>
+<ul>
+  <app-iphone-details
+  *ngFor="let IphoneName  of hardware" [iphone]="IphoneName" 
+  >
+
+  </app-iphone-details>
+
+  </ul>

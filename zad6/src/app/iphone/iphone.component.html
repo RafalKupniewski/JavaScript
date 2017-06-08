@@ -1,0 +1,15 @@
+<form [formGroup]="myForm" (ngSubmit)="add(myForm.value)">
+  <p>model</p>
+   <input type="text" [formControl]="model" >
+   <div *ngIf="model.hasError('required')">Required</div>
+   <br>
+   <p>rok</p>
+    <input type="text"  [formControl]="myForm.controls['rok']">
+    <div *ngIf="rok.hasError('required')">Required</div>
+    <br>    
+    <p>pojemnosc</p>
+    <input type="number" [formControl]="pojemnosc">
+    <div *ngIf="pojemnosc.hasError('required')">Required only numbers</div>
+    <br>   
+    <button type="submit" [disabled]="!myForm.valid">OK</button>  
+</form>

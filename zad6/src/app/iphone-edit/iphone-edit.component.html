@@ -1,0 +1,20 @@
+<form [formGroup]="formEdit" (ngSubmit)="edit(formEdit.value)">
+  <p> model obecny</p>
+   <input type="text" [formControl]="model">
+   <div *ngIf="model.hasError('required')">Required</div>
+   <br>
+
+   <p>nowy model</p>
+   <input type="text" [formControl]="modelNew">
+   <div *ngIf="modelNew.hasError('required')">Required</div>
+   <br>
+   <p>nowa data premiery</p>
+    <input type="text" [formControl]="rokNew">
+    <div *ngIf="rokNew.hasError('required')">Required</div>
+    <br>   
+    <p>nowa pojemnosc</p>
+    <input type="number" [formControl]="pojemnoscNew">
+    <div *ngIf="pojemnoscNew.hasError('required')">Required</div>
+    <br>  
+    <button type="submit" [disabled]="!formEdit.valid">OK</button>  
+</form>

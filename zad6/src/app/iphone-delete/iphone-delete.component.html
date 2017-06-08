@@ -1,0 +1,9 @@
+<form [formGroup]="formDelete" (ngSubmit)="deleteIphone(formDelete.value)">
+  <p>model</p>
+   <input type="text" [formControl]="model">
+   <div *ngIf="model.hasError('required')">Required</div>
+   <br>
+   
+    <br>    
+    <button type="submit" [disabled]="!formDelete.valid">OK</button>  
+</form>

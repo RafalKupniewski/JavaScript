@@ -1,0 +1,8 @@
+<input type="search" placeholder="wpisz rok premiery iphone'a'" [formControl]="search">
+
+<ul>
+    <div *ngFor="let searchPhone of searches">
+        <div *ngIf="searchPhone.return!='empty'">
+        {{searchPhone.return}}
+        </div></div>
+</ul>
