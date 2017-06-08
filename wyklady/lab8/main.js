@@ -1,5 +1,7 @@
 import {Component, OnInit}from '@angular/core';
 
+
+
 expty class MainComponent implements OnInit {
 
     adder: Adder;
@@ -8,6 +10,7 @@ expty class MainComponent implements OnInit {
     constructor() {}
     add(a: number, b:number){ return a+b}
 }
+
 
 
 

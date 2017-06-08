@@ -1,0 +1,23 @@
+<form [formGroup]="myForm" (ngSubmit)="add(myForm.value)">
+  <p>model</p>
+   <input type="text" [formControl]="model">
+   <div *ngIf="model.hasError('required')">Pole wymagane</div>
+   <br>
+   <p>rok</p>
+    <input type="text" [formControl]="rok">
+    <div *ngIf="rok.hasError('required')">Pole wymagane</div>
+    <br>    
+    <p>pojemnosc</p>
+    <input type="text" [formControl]="pojemnosc">
+    <div *ngIf="pojemnosc.hasError('required')">Pole wymagane</div>
+    <br>   
+    <button type="submit">OK</button>  
+</form>
+<ul>
+  <app-iphone-details
+  *ngFor="let IphoneName  of hardware" [iphone]="IphoneName" 
+  >
+
+  </app-iphone-details>
+
+  </ul>
